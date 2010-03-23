@@ -1,0 +1,7 @@
+%h2= @subscription.title
+= button_to "Unsubscribe", user_subscription_path(@user, @subscription), :method => :delete, :confirm => "Are you sure you want to unsubscribe from #{@subscription.title}?"
+
+= link_to "<< Back", user_subscriptions_path(@user)
+
+- @articles.each do |article|
+  = render 'article', :article => article

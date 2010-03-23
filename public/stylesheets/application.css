@@ -1,0 +1,10 @@
+.flash_message {
+  margin: 0.25em 0;
+  padding: 0.5em;
+  background: #CCC; }
+
+.flash_message_error {
+  background: #F55; }
+
+#header {
+  border-bottom: 1px solid black; }

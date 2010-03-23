@@ -1,0 +1,9 @@
+.feed_item
+  %h3.item_title
+    = link_to article.title, article.url, :target => '_blank'
+  .item_author= article.author
+  .item_published_at= article.published_at.to_s(:long)
+  .item_content= article.content
+  .item_controls{:id => item_controls_id(article)}
+    = render 'item_controls', :article => article
+%hr

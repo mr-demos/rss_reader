@@ -1,0 +1,6 @@
+%h2 Add a Subscription
+= error_messages_for :subscription
+- form_for @subscription, :url => user_subscriptions_path(@user), :method => :post do |f|
+  %label Feed URL
+  = f.text_field :url
+  = submit_tag "Add"

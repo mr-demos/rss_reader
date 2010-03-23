@@ -1,0 +1,6 @@
+log
+nbproject
+rerun.txt
+tmp
+db/schema.rb
+db/*.sqlite3

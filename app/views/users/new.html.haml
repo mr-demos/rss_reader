@@ -1,0 +1,6 @@
+%h2 Signup or Sign In
+- form_for @user do |f|
+  = error_messages_for :user
+  %label Email
+  = f.text_field :email
+  = submit_tag 'Go'
